@@ -1,0 +1,36 @@
+name: Build and test
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: powershell
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm.cmd ci
+      - run: |
+          & .\node_modules\.bin\tsc.cmd --noEmit
+          if ($LASTEXITCODE -ne 0) { throw 'TypeScript failed' }
+          npm.cmd run build:dev
+          if ($LASTEXITCODE -ne 0) { throw 'Build failed' }
+          node --check .\com.deckbridge.wow.dev.sdPlugin\bin\plugin.js
+          if ($LASTEXITCODE -ne 0) { throw 'JS syntax failed' }
+          npm.cmd test
+          if ($LASTEXITCODE -ne 0) { throw 'Mocked tests failed' }
+          foreach ($test in @('test-dev-keys','test-live-reader','test-reader-lease','test-game-exit')) {
+            powershell.exe -NoProfile -File ("scripts/" + $test + ".ps1")
+            if ($LASTEXITCODE -ne 0) { throw $test }
+          }
+          node scripts/check-dev-package.cjs
+          if ($LASTEXITCODE -ne 0) { throw 'Package check failed' }
+          node scripts/generate-notices.cjs
+          if ($LASTEXITCODE -ne 0) { throw 'Notices failed' }
+          node scripts/package-dev-fresh.cjs
+          if ($LASTEXITCODE -ne 0) { throw 'Packaging failed' }

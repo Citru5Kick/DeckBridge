@@ -1,0 +1,7 @@
+## Interface: 120105
+## Title: DeckBridge
+## Version: 0.1.13
+## SavedVariables: DeckBridgeDevDB
+DeckBridgeDev.lua
+LiveIcons.lua
+UtilityActions.lua

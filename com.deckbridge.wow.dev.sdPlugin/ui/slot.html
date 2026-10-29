@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+<body>
+  <p style="font-size:12px;padding:0 12px;color:#ddd">Live capture is OFF by default. Add a Screen Reader button on this page and press it to start or stop capture. Capture only runs while World of Warcraft is the active window. Saved data is used while capture is off.</p>
+  <p style="font-size:12px;padding:0 12px;color:#ddd">Open Zone Settings using the DeckBridge minimap button or /dbzones.</p>
+  <sdpi-item label="Zone">
+    <sdpi-select setting="bar" default="1">
+      <option value="1">Zone 1</option>
+      <option value="2">Zone 2</option>
+      <option value="3">Zone 3</option>
+      <option value="4">Zone 4</option>
+      <option value="5">Zone 5</option>
+      <option value="6">Zone 6</option>
+      <option value="7">Zone 7</option>
+      <option value="8">Zone 8</option>
+    </sdpi-select>
+  </sdpi-item>
+
+  <sdpi-item label="Slot position">
+    <sdpi-select setting="position" default="1">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </sdpi-select>
+  </sdpi-item>
+
+  <sdpi-item label="Addon data file">
+    <sdpi-textfield
+      setting="file"
+      global
+      placeholder="Select the addon SavedVariables file"
+    ></sdpi-textfield>
+  </sdpi-item>
+</body>
+</html>

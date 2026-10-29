@@ -1,0 +1,169 @@
+{
+  "Name": "DeckBridge",
+  "Version": "0.1.13.0",
+  "Author": "Citru5Kick",
+  "Actions": [
+    {
+      "Name": "Action Slot",
+      "UUID": "com.deckbridge.wow.dev.slot",
+      "Icon": "imgs/duotone/slot",
+      "Tooltip": "Activate a World of Warcraft action slot.",
+      "PropertyInspectorPath": "ui/slot.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/duotone/slot",
+          "TitleAlignment": "bottom"
+        }
+      ]
+    },
+    {
+      "Name": "Emote",
+      "UUID": "com.deckbridge.wow.dev.emote",
+      "Icon": "imgs/duotone/emote",
+      "Tooltip": "Perform an emote selected from the list.",
+      "PropertyInspectorPath": "ui/emote.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/duotone/emote",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        }
+      ]
+    },
+    {
+      "Name": "Map & Quests",
+      "UUID": "com.deckbridge.wow.dev.quests",
+      "Icon": "imgs/duotone/map",
+      "Tooltip": "Open or close the map and quest log.",
+      "PropertyInspectorPath": "ui/utility.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/duotone/map",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        }
+      ]
+    },
+    {
+      "Name": "Backpack",
+      "UUID": "com.deckbridge.wow.dev.backpack",
+      "Icon": "imgs/duotone/backpack",
+      "Tooltip": "Open or close your backpack.",
+      "PropertyInspectorPath": "ui/utility.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/duotone/backpack",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        }
+      ]
+    },
+    {
+      "Name": "Map & Quests",
+      "UUID": "com.deckbridge.wow.dev.worldmap",
+      "Icon": "imgs/duotone/map",
+      "Tooltip": "Open or close the map and quest log.",
+      "PropertyInspectorPath": "ui/utility.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/duotone/map",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        }
+      ],
+      "VisibleInActionsList": false
+    },
+    {
+      "Name": "Character",
+      "UUID": "com.deckbridge.wow.dev.character",
+      "Icon": "imgs/duotone/character",
+      "Tooltip": "Open or close character equipment and statistics.",
+      "PropertyInspectorPath": "ui/utility.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/duotone/character",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        }
+      ]
+    },
+    {
+      "Name": "Spellbook",
+      "UUID": "com.deckbridge.wow.dev.spellbook",
+      "Icon": "imgs/duotone/spellbook",
+      "Tooltip": "Open or close the spellbook.",
+      "PropertyInspectorPath": "ui/utility.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/duotone/spellbook",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        }
+      ]
+    },
+    {
+      "Name": "Screen Reader",
+      "UUID": "com.deckbridge.wow.dev.reader",
+      "Icon": "imgs/duotone/reader-off",
+      "Tooltip": "Start or stop screen capture. Off by default.",
+      "PropertyInspectorPath": "ui/reader.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "DisableAutomaticStates": true,
+      "States": [
+        {
+          "Image": "imgs/duotone/reader-off",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        },
+        {
+          "Image": "imgs/duotone/reader-on",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        }
+      ],
+      "SupportedInMultiActions": false
+    }
+  ],
+  "Category": "DeckBridge",
+  "CategoryIcon": "imgs/duotone/brand",
+  "CodePath": "bin/plugin.js",
+  "Description": "Control World of Warcraft action slots from Stream Deck.",
+  "Icon": "imgs/duotone/brand",
+  "SDKVersion": 3,
+  "Software": {
+    "MinimumVersion": "7.1"
+  },
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "24"
+  },
+  "UUID": "com.deckbridge.wow.dev"
+}
