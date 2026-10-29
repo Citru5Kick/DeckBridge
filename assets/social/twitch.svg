@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="40" viewBox="0 0 190 40" role="img" aria-labelledby="title">
+  <title id="title">Twitch — Citru5Kick</title>
+  <rect x=".5" y=".5" width="189" height="39" rx="9" fill="#101F30" stroke="#29485C"/>
+  <path d="M16 9h23v17l-7 7h-6l-4 4v-4h-6V9Zm4 4v16h6v3l3-3h5l2-3V13H20Z" fill="#4BD8F5" transform="translate(0 -3)"/>
+  <path d="M27 13v8m6-8v8" stroke="#F2CE7B" stroke-width="2.5"/>
+  <text x="52" y="16" fill="#F2CE7B" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">TWITCH</text>
+  <text x="52" y="30" fill="#E8F7FB" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">Citru5Kick</text>
+</svg>

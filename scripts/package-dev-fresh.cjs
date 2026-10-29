@@ -49,6 +49,7 @@ for (const file of ['DeckBridgeDev.lua', 'LiveIcons.lua', 'UtilityActions.lua', 
   add(path.join(root, 'addon/DeckBridgeDev', file), path.join('addon/DeckBridgeDev', file));
 }
 for (const lang of ['pl', 'en']) add(path.join(root, `LIVE-ICONS.${lang}.md`), `LIVE-ICONS.${lang}.md`);
+for (const file of ['assets/social/twitch.svg', 'assets/social/website.svg']) add(path.join(root, file), file);
 for (const file of ['LICENSE', 'THIRD_PARTY_NOTICES.txt', 'README.md', 'README.pl.md', 'PRIVACY.md', 'USER-GUIDE.en.md', 'USER-GUIDE.pl.md', 'TESTING.en.md', 'TESTING.pl.md', 'CONTRIBUTING.md', 'SECURITY.md', 'duotone-preview.png']) add(path.join(root, file), file);
 const hash = file => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 const expected = [...sources].map(([relative, source]) => ({ path: relative, sha256: hash(source) }));

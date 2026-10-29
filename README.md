@@ -1,5 +1,7 @@
 # DeckBridge
 
+[![Twitch — Citru5Kick](assets/social/twitch.svg)](https://twitch.tv/Citru5Kick) [![Website — Citru5Kick.pl](assets/social/website.svg)](https://Citru5Kick.pl)
+
 [Polski](README.pl.md) · [User guide](USER-GUIDE.en.md) · [Privacy](PRIVACY.md) · [Contributing](CONTRIBUTING.md)
 
 DeckBridge connects World of Warcraft action bars to Elgato Stream Deck on Windows. It includes a WoW addon and a Stream Deck plugin, with matching Duotone artwork.

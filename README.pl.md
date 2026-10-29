@@ -1,5 +1,7 @@
 # DeckBridge
 
+[![Twitch — Citru5Kick](assets/social/twitch.svg)](https://twitch.tv/Citru5Kick) [![Strona internetowa — Citru5Kick.pl](assets/social/website.svg)](https://Citru5Kick.pl)
+
 [English](README.md) · [Instrukcja obsługi](USER-GUIDE.pl.md) · [Prywatność](PRIVACY.md)
 
 Addon WoW i plugin Stream Deck dla Windows. Udostępnia przyciski umiejętności z aktualnymi ikonami, edytowalne strefy odczytu, emotki, Map & Quests, Backpack, Character i Spellbook. Grafiki interfejsu mają wspólny styl Duotone.
