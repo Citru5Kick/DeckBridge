@@ -11,6 +11,7 @@ const destination = path.join(root, `dev-release-${new Date().toISOString().repl
 const plugin = 'com.deckbridge.wow.dev.sdPlugin';
 const sources = new Map();
 function add(source, relative) {
+  relative = path.normalize(relative);
   assert(fs.lstatSync(source).isFile(), `Not a regular file: ${source}`);
   assert(!sources.has(relative), `Duplicate: ${relative}`);
   sources.set(relative, source);
