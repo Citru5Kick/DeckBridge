@@ -2,6 +2,7 @@
   "scripts": {
     "build:dev": "set \"DECKBRIDGE_TARGET=dev\" && rollup -c",
     "test": "node scripts/run-tests.cjs",
+    "check:secrets": "node scripts/check-secrets.cjs",
     "notices": "node scripts/generate-notices.cjs"
   },
   "type": "module",
